@@ -15,7 +15,8 @@
   },
   "scripts": {
     "start": "ts-node src/app.ts",
-    "typeorm": "typeorm-ts-node-commonjs",
-    "migration-create": "npm run typeorm migration:generate -- src/database/migrations/Migration -d src/database/data-source.ts"
+    "typeorm": "typeorm-ts-node-commonjs ",
+    "migrations-generate": "npm run typeorm migration:generate -- src/database/migrations/Users -d src/database/data-source.ts",
+    "migrations-run": "npm run typeorm migration:run -- -d src/database/data-source.ts"
   }
 }
