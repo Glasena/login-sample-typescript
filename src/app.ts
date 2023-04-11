@@ -1,5 +1,4 @@
 import { AppDataSource } from './database/data-source';
-import dotenv from dotenv;
 
 const express = require('express');
 const app = express();
